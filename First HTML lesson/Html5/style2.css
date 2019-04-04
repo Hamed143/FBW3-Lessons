@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 body{
-    width: 
-    
+     
 }
 #main{
-    background-color: lightgreen;
-    width: 60%;
+    background-color: rgb(250, 242, 224);
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
 }
 /* #mydiv{
@@ -21,7 +21,6 @@ body{
     width: 100%;
     padding: 40px;
     background: yellow;
-    
 }
 #div2{
     width: 100px;
@@ -29,7 +28,6 @@ body{
     background: green;
     margin: 0 auto;
     text-align: center;
-
 }
 #header{
     width: 50%;
@@ -41,7 +39,6 @@ body{
     right: 0;
     left: 0;
     bottom: 0;
-    
 } */
 header{
     width: 100%;
@@ -67,7 +64,6 @@ nav{
     right: 20px;
     bottom: 10px;
     /* position ro baiad az header taghir bedem wa position text wa baghia chez ha ra az nav */
-
 }
 nav a{
     padding: 10px;
@@ -106,7 +102,6 @@ nav a:hover{
     text-decoration: none;
     background-color: red;
     padding: 3px;
-
 }
 article{
     width: 60%;
@@ -118,20 +113,63 @@ aside{
     width: 40%;
     color: white;
     background-color: #706b64;
-    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+aside h1{
+    text-align: center;
 }
 article,aside{
     float: left;
-    border: 1px solid darkgoldenrod;
     text-align: justify;
     padding: 10px;
+}
+#asideimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+.social-media{
+    text-align: center;
+}
+.social-media img{
+    margin-right: 5px;
 }
 footer{
     width: 100%;
     display: inline-block;
-    border: 1px solid darkgoldenrod;
 }
-#tweet, #my_pictures, #myfriends{
+#tweet, #my_pictures, #my_friends{
     float: left;
-    width: 33%;
+    vertical-align: top;
+    display: inline block;
+}
+#tweet{
+    width: 28%
+}
+#tweet h1, #my_friends h1, #my_pictures h1{
+    font-weight: normal;
+}
+#my_pictures{
+    width: 35%;
+}
+#my_pictures img{
+    border: 1px solid #181818;
+}
+#my_friends{
+    width: 35%;
+}
+#my_friends ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding-left: 12px;
+    margin-top: 0px;
+    list-style-image: url('images/list.png');
+}
+#my_friends a{
+    text-decoration: none;
+    color: #760001;
 }
