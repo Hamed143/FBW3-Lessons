@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 body{
-     
+     width: 100%;
+     margin: 0 auto;
+     background-color: lightgoldenrodyellow;
 }
 #main{
     background-color: rgb(250, 242, 224);
@@ -76,7 +78,8 @@ nav a:hover{
 }
 #banner_image{
     height: 200px;
-    background: url('images/banner_image.jpg') ;
+    background: url('images/banner_image.jpg');
+    background-position: center center;
     position: relative;
     border: 1px solid darkgoldenrod;
     margin-top: 15px;
@@ -118,6 +121,7 @@ aside{
 }
 aside h1{
     text-align: center;
+    font-size: 1.5em;
 }
 article,aside{
     float: left;
@@ -172,4 +176,41 @@ footer{
 #my_friends a{
     text-decoration: none;
     color: #760001;
+}
+/* ein tag payen ke ba name media screen ast tamame website mara responsive mekona wa har bakhsh ba tag makhsos khodesh metanem ke bain ein tag neweshta konem ta version mobile ya amo responsive ba dest byaya */
+@media screen and (max-width: 600px) {
+    nav{
+        position: relative;
+        text-align: center;
+        bottom: 0px;
+        right: 0px;
+    }
+ 
+    nav a, aside, article, #my_pictures, #tweet,#my_friends, ul{
+        display: block;
+        width: 100%;
+    }
+    #banner_image{
+        background-position: center center;
+    }
+    #banner_description{
+        height: auto;
+    }
+    .red_button{
+        position: relative;
+        display: inline-block;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+    }
+    #my_pictures, #my_friends, #tweet{
+        text-align: center;
+        
+        
+    }
+    #main_title{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
