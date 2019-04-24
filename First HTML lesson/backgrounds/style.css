@@ -1,0 +1,46 @@
+body{
+    background: rgb(200, 200, 200)
+}
+.main{
+    text-shadow: 2px 2px 5px darkblue, 2px 2px 5px red;
+    box-shadow: 1px 5px 5px darkblue;
+    /* transform: rotate(1deg); */
+    /* transform: rotateY(20deg); */
+    transform: scale(1,1);
+    text-align: center;
+    color: white;
+    height: 250px;
+    border: 1px solid #111;
+    /* background-image: linear-gradient(0deg,rgb(0, 238, 255),rgb(0, 255, 0)); */
+}
+#div1{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    height: 250px;
+    border: 1px solid #111;
+    background-image: linear-gradient(90deg,rgb(0, 238, 255),rgb(0, 255, 0));
+}
+#div2{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    height: 250px;
+    border: 1px solid #111;
+    background-image: linear-gradient(180deg,rgb(0, 238, 255),rgb(0, 255, 0));
+}
+#div3{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    height: 250px;
+    border: 1px solid #111;
+    background-image: linear-gradient(0deg,lightgray, gray, darkblue);
+}
+#div3 h1{
+    background: linear-gradient(90deg, green, yellow, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 3em;
+}

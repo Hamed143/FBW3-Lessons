@@ -1,0 +1,43 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* transition: backkground 3s,width 6s,border-radius2s; */
+    transition: all 2s;
+    transition-timing-function: linear;
+    transition-timing-function: ease-out;
+    /* transition-delay: 3s; */
+    /* transition: width 2s,height 2s; */
+    margin: 50px auto;
+    /* transform: translate(200px,200px) rotate(-180deg) */
+    
+}
+.div1:hover{
+    background-image: url(img/hes.jpg);
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    border-radius: 45px;
+    /* transform: rotate(180deg); */
+    /* transform: translate(100px,100px) rotate(180deg); */
+    opacity: 0.4;;
+}
+.div2{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: yellow;
+    animation-name: newanimation,myanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* transition-timing-function: cubic-bezier(.4,1.11,.27,.04); */
+    animation-direction: alternate-reverse;
+}
+@keyframes myanimation{
+    from{background: url('img/11.jpg') no-repeat;transform: }
+    to{background: url('img/br.png') no-repeat;}
+}
+@keyframes newanimation{
+    from{width: 150px;}
+    to{width: 200px;height: 200px; transform: translate(100px,100px) rotateX(180deg) rotate(180deg); opacity: 0.9;}
+}

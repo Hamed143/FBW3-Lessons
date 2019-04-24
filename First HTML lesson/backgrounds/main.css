@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(200, 200, 200);
+    background-color: #e6e6e6;
+    background-image: url(img/bmw_logo.png);
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+p{
+    font-size: 17px;
+    color: rgb(255, 31, 31);
+    font-weight: bold;
+}

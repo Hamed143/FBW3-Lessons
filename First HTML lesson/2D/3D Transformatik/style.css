@@ -1,0 +1,17 @@
+.mydiv{
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(red, blue, green);
+    color: beige;    
+    transition: 5s;           
+}
+.mydiv:hover{
+    transform: 
+    /* translate(200px, 200px)  */
+    /* rotate(-0.7885rad)
+    scale(2,4) */
+    /* skewX(23deg) */
+    /* skew(-23deg, 15deg); */
+    matrix(2,0,0,4,200,200)
+    rotate(25deg); /*translate + scal + rotate*/
+}

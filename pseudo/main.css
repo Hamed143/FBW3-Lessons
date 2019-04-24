@@ -1,0 +1,9 @@
+p:first-child{
+    color: red;
+    font-size: 2em;
+}
+p::first-line{
+    font-size: 1.3em;
+    color: rgb(89, 161, 170);
+    
+}
