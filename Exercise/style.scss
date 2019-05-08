@@ -1,0 +1,39 @@
+$color1:blue;
+$color2:purple;
+$color3:green;
+$font-family1:Arial, Helvetica, sans-serif;
+$font-family2:'Times New Roman', Times, serif;
+$font-family3:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+$font-family4:Georgia, 'Times New Roman', Times, serif;
+$font-family5:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$size1:10rem;
+$size2:8rem;
+$size3:3rem;
+$size4:2rem;
+$size5:5rem;
+$background-color1:rgba(255, 255, 0, 0.39);
+
+html,body{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box; 
+}
+header{
+    height: 10rem;
+    background-color: rgba(255, 255, 0, 0.39);
+    text-align: center;
+    padding-top: 2rem;
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+ }
+}
+main {
+    margin: .5rem; 
+}
+.huge {
+    font:{
+      family: 'Times New Roman', Times, serif;
+      size: 10rem;
+      color: blue; }
+  }

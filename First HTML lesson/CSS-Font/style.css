@@ -1,0 +1,27 @@
+body{
+    font-size: 3em;
+}
+@font-face{
+    src: url(fonts/Caveat/Caveat-Bold.ttf);
+    font-family: ru-font;
+}
+@font-face{
+    src: url(fonts/Rakkas/Rakkas-Regular.ttf);
+    font-family: arabic-font;
+}
+.font-italic{
+    font-family: Arial,sans-serif, Helvetica;
+    font-style: italic;
+}
+.my-font{
+    font-family: 'Parisienne', cursive;
+}
+.google-font{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.ru-font{
+    font-family: ru-font;
+}
+.arbic-font{
+    font-family: arabic-font;
+}
