@@ -1,0 +1,32 @@
+.header-title {
+  font-size: 2rem;
+}
+
+.header-title {
+  font-size: 2rem;
+}
+
+@media (min-width: 300px) {
+  .header-title {
+    -webkit-column-count: 1;
+            column-count: 1;
+    border: 10px solid #e09485;
+  }
+}
+
+@media (min-width: 600px) {
+  .header-title {
+    -webkit-column-count: 2;
+            column-count: 2;
+    border: 20px solid #e0a385;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-title {
+    -webkit-column-count: 3;
+            column-count: 3;
+    border: 30px solid #e0b385;
+  }
+}
+/*# sourceMappingURL=media.css.map */
