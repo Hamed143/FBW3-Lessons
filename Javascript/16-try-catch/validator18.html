@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate your age</title>
+</head>
+<body>
+    
+    <!-- <p>Input 1: <input type="text" id="n1"></p>
+    <p>Input 2: <input type="text" id="n2"></p>
+    <button type="button" onclick="divide()">Divide</button> -->
+
+    <input type="text" id="n1"/><br/><br/>
+    <input type="text" id="n2"/><br/><br/>
+    
+    <select id="operators">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="X">X</option>
+    </select>
+    
+    <button onclick="calc();">=</button>
+    <input type="text" id="result"/>
+
+    <script>
+          function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+') {
+                    document.getElementById('result').value = n1+n2;
+                }
+                if(oper === '-') {
+                    document.getElementById('result').value = n1-n2;
+                }
+                if(oper === '/') {
+                    document.getElementById('result').value = n1/n2;
+                }
+                if(oper === 'X') {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+        //  function divide() {
+        //      try {
+        //      var x = document.getElementById("age").value;
+        //      var y = document.getElementById("age1").value;
+        //      console.log("it is "+ x/y);
+        //         if(y == 0) throw"Cannot divide by 0";
+        //         if(isNaN(x/y)) throw "probably data contains a string"
+        //         alert(x/y)
+        //  }catch(e){
+        //      alert(e);
+        //  }
+        // }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rectangle</title>
+</head>
+<body>
+    
+    <div id="myrect"></div>
+
+    <script>
+        class Rectangle {
+        constructor(height, width, color) {
+            this.name = 'Rectangle';
+            this.height = height;
+            this.width = width;
+            this.color = color;
+        }
+        sayName() {
+            console.log('Hi, I am a ', this.name + '.');
+        }
+        get area() {
+            return this.height * this.width;
+        }
+        set area(value) {
+            this.height = this.width = this.color = Math.sqrt(value);
+            }
+        }
+        class Square extends Rectangle {
+        constructor(length) {
+            this.height; 
+            super(length, length);
+            this.name = 'Square';
+        }
+    }
+    </script>
+
+</body>
+</html>

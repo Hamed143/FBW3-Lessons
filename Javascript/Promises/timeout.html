@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var myDelay = 2000; //ms
+
+        //Promise
+var willIGetDBResponse = new Promise(
+    function(resolve, reject){
+        if(myDelay < 3000){
+            var response = {
+                username: "johnsimth",
+                name: "John",
+                surname: "Smith"
+        }
+            setInterval(function(){
+            resolve(response); // fulfilled
+            }, 3000);
+        }else{
+            var error = new Error("it took too long");
+            setInterval(function(){
+            reject(error); // reject
+        }, 3000);
+        } 
+    }
+);
+// Call our promise
+var sendRequest = function(){
+    willIGetDBResponse
+.then(function (response){
+console.log(response);
+})
+.catch(function (error){
+console.error(error.message);
+})
+}
+sendRequest();
+    </script>
+
+</body>
+</html>

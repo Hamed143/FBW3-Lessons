@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<form id="PasswordValidate">
+    <fieldset>
+        <legend>Add Password </legend>
+            <label for="Password">Password</label>
+            <input type="text" id="password" name="Password" />
+          
+        <button>submit</button>
+</fieldset>
+</form>         
+<ol id="fbw3"></ol>
+<script>
+    let pass=document.getElementById("password")
+    var list = document.getElementById('fbw3');
+    var entry = document.getElementById('PasswordValidate');
+    entry.onsubmit = function(evt) {
+    evt.preventDefault();
+    var password = document.getElementById('password').value;
+    var entry = document.createElement('li');
+    entry.appendChild(document.createTextNode(password));
+    list.appendChild(entry);
+    console.log(pass.value.length);
+        if(pass.value.length<=6 && pass.value.length !="")throw "Its too short";
+        if(pass.value.length>6   && pass.value.length < 12 )throw"its OK";
+        if(pass.value=="")  throw"impty input";
+        if(pass.value.length>20)throw"its strong enogh";
+
+       }
+</script>
+</body>
+</html>

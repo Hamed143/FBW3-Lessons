@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Forms</title>
+</head>
+<body>
+        Field1 <input type="text" id="field1" value="Hamed Hossainy"><br>
+        Field2 <input type="text" id="field2"><br><br>
+
+    <button onclick="getCurrentDate()">Get current Date</button>
+    <!-- 1234455467 -->
+    <button onclick="getUnixtime()">Get Unix Timestamp</button>
+    <!-- hh:mm:ss -->
+    <button onclick="getTimeStamp()">Get Only Time</button>
+    <!-- 2019.07.03 -->
+    <button onclick="getOnlyDate()">Get Only Date</button>
+    <!-- show the watches -->
+    <button onclick="showWatches()" style="background-color:aqua">Show watches</button>
+    <p id="Out"></p>
+    <p id="watches"></p>
+    <p id="T"></p>
+
+    <script>
+        // here getCurrentDate()
+        // function getCurrentDate() {
+        // document.getElementById("field2").value = document.getElementById("field1").value;
+        // }
+        function prepareWatches() {
+            let d = new Date();
+            h = d.getHours();
+            m = d.getMinutes();
+            s = d.getSeconds();
+            mil = d.getMilliseconds();
+            watches = h + ";" + m + ";" + s + ";" + mil;
+            document.getElementById("watches").innerHTML = watches;
+        }
+        function showWatches(){
+            setInterval(prepareWatches, 1); // 500 milliseconds
+            
+        }
+        function getOnlyDate(){
+           let d = new Date();
+           let y = d.getFullYear();
+           let m = d.getMonth()+1;
+           let day = d.getDay();
+           document.getElementById("T").innerHTML = y + ";" + m + ";" + day;
+       }
+        function getTimeStamp() {
+            let d = new Date();
+            h = d.getHours() + 1; // hh (0-23) hh
+            m = d.getMinutes() // no need to add 1 (0-59) mm
+            s = d.getSeconds(); // no need to add 1 (0-59) ss
+            out = h + ";" + m + ";" + s;
+            document.getElementById("T").innerHTML = out;
+        }
+        function getUnixtime(){
+           let d = new Date();
+           unix_time = d.getTime();
+           document.getElementById("T").innerHTML= unix_time;
+       }
+        function getCurrentDate(){
+           let d = new Date();
+           document.getElementById("T").innerHTML=(d);
+       }
+    </script>
+    
+</body>
+</html>

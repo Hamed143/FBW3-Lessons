@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+       var isMomHappy = true;
+
+//Promise
+var willIGetNewPhone = new Promise(
+    function(resolve, reject){
+        if(isMomHappy){
+            var phone = {
+                brand: "Apple",
+                color:"black"
+            }
+            resolve(phone); // fulfilled
+        }else{
+            var reason = new Error("mom is no happy");
+            reject(reason); // reject
+        } 
+    }
+);
+// Call our promise
+var askMom = function(){
+willIGetNewPhone
+.then(function (fulfilled){
+console.log();
+})
+.catch(function (error){
+//oops, mom doesn t bu< it
+console.error(error.message);// -> "mom is not happy"
+})
+}
+askMom();
+    </script>
+
+</body>
+</html>
