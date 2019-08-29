@@ -1,10 +1,43 @@
-let input1=document.getElementById("plus1");
-let input2=document.getElementById("plus2");
-let input3=document.getElementById("result");
+// // let input1=document.getElementById("plus1");
+// // let input2=document.getElementById("plus2");
+// // let input3=document.getElementById("result");
 
-  function plusOperation(){
-    var x=input1+input2;
-    console.log(input1.value);
+//   sumCalculate=function (){
     
+//     input1=document.getElementById("plus1");
+//     input2=document.getElementById("plus2");
+
+//     sum = parseInt(plus1.value) + parseInt(plus2.value);
+
+//     result=document.getElementById("result");
+//     result.innerText = sum;
+//     result.addEventListner("keyup".sumCalculate);
+// }
+
+function calc()
+{
+    var n1 = parseFloat(document.getElementById('n1').value);
+    var n2 = parseFloat(document.getElementById('n2').value);
+    
+    var oper = document.getElementById('operators').value;
+    
+    if(oper === '+')
+    {
+        document.getElementById('result').value = n1+n2;
+    }
+    
+    if(oper === '-')
+    {
+        document.getElementById('result').value = n1-n2;
+    }
+    
+    if(oper === '/')
+    {
+        document.getElementById('result').value = n1/n2;
+    }
+    
+    if(oper === 'X')
+    {
+        document.getElementById('result').value = n1*n2;
+    }
 }
-input1.addEventListner("keyup".plusOperation);
