@@ -1,23 +1,80 @@
-let p = document.getElementById('colorCode');
-let div = document.getElementById('myColor');
 
+    // function getRandomColor(){
+    //     for (i = 0; i < 4; i++){
+    //         let div = document.createElement("div");
+    //         div.textContent = "#ccddff";
+    //         div.className = "box";
+    //         div.style.background = random();
 
-//     function getRandomColor(){
-//         let allColors = '012ABCDEF3456789';
-//         let color = "#";
-//         for (i = 0; i < 6; i++){
-//             let x = Math.floor(Math.random() * allColors.length);
-//             color +=  allColors[x];
-//         };
-//             return color;
-//      }
-Math.randomChoice = function(collection) {
-    return collection[Math.floor(Math.random() * collection.length)];
-};
-
-function main() {
-    setTimeout(function() {
-        var elem = Math.randomChoice(['good', 'bad']);
-        $('div.' + elem).click();
-    }, 30*1000);
-}
+    //         let main = document.getElementById("main");
+    //         main.appendChild(div);
+    //  }
+    tion.jsJavaScript
+    /** code by webdevtrick ( https://webdevtrick.com ) **/
+    var r,g,b,cstring;
+    function colapply(){
+    color();
+    r=newcolor.slice(1,3);
+    g=newcolor.slice(3,5);
+    b=newcolor.slice(5,7);
+    r=parseInt(r,16);
+    g=parseInt(g,16);
+    b=parseInt(b,16);
+        
+    cstring="rgb("+r+","+g+","+b+")";
+    $(".colorc").html("<"+"div class="+"'"+"colorc1"+"'"+">"+"<"+"/"+"div"+">"+newcolor+"<span class='rgb'>"+cstring+"</span>");
+    $("body").css({
+    "background":newcolor
+    });
+    $(".colorc").css({
+    "color":newcolor
+    });
+    
+    $(".colorc1").css({
+    "background":cstring
+    });
+    
+    }
+    var newcolor;
+    function color(){
+    newcolor="#"+(Math.random()*0xFFFFFF<<0).toString(16);
+    if(newcolor.length<7){
+    color();
+    }
+    }
+    $(".colorc").click(colapply);
+    colapply();
+    /** code by webdevtrick ( https://webdevtrick.com ) **/
+    var r,g,b,cstring;
+    function colapply(){
+    color();
+    r=newcolor.slice(1,3);
+    g=newcolor.slice(3,5);
+    b=newcolor.slice(5,7);
+    r=parseInt(r,16);
+    g=parseInt(g,16);
+    b=parseInt(b,16);
+        
+    cstring="rgb("+r+","+g+","+b+")";
+    $(".colorc").html("<"+"div class="+"'"+"colorc1"+"'"+">"+"<"+"/"+"div"+">"+newcolor+"<span class='rgb'>"+cstring+"</span>");
+    $("body").css({
+    "background":newcolor
+    });
+    $(".colorc").css({
+    "color":newcolor
+    });
+     
+    $(".colorc1").css({
+    "background":cstring
+    });
+     
+    }
+    var newcolor;
+    function color(){
+    newcolor="#"+(Math.random()*0xFFFFFF<<0).toString(16);
+    if(newcolor.length<7){
+    color();
+    }
+    }
+    $(".colorc").click(colapply);
+    colapply();
