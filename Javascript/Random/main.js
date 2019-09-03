@@ -9,8 +9,6 @@
     //         let main = document.getElementById("main");
     //         main.appendChild(div);
     //  }
-    tion.jsJavaScript
-    /** code by webdevtrick ( https://webdevtrick.com ) **/
     var r,g,b,cstring;
     function colapply(){
     color();
