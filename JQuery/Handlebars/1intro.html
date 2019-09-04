@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HB Intro</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js" 
+  integrity="sha256-fIuSfP8oRbwWG9pRr+FaGfBU62kYY+7YqUsXSCgnYqM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <script id="hb-intro" type="text/x-handlebars-template">
+        <div>
+            My name is {{name}}. I am a {{occupation}}.
+        </div>
+    </script>
+    <script>
+        // jQuery: Retrieve the template data from the HTML
+        var template = $("#hb-intro").html();
+
+        // HB: Compile the template
+        var templateScript = Handlebars.compile(template);
+
+        //Now define your name and your occupation
+        var context = {"name": "Bill Gates", "occupation": "MS CEO"};
+
+        // HB: html = 'My name is Bill Gates. I am a MS CEO'
+        var html = templateScript(context);
+
+        // jQuery: insert the HTML code into the page
+        $(document.body).append(html);
+    </script>
+    
+</body>
+</html>
