@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.containerClass{
+  background: url('./img/laptop.jpeg');
+  background-size: cover;
+  height: 100vh;
+}

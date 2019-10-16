@@ -1,0 +1,20 @@
+$my-background:url('./img/keyboard.jpeg');
+$my-color:darkblue;
+
+body{
+    background-repeat: no-repeat;
+    background: $my-background;
+    background-size: cover;
+    color: $my-color;
+}
+div{
+    text-align: center;
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+    }
+    img{
+        width: 400px;
+        height: 500px;
+    }
+}
