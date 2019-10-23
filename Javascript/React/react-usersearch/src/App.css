@@ -1,0 +1,27 @@
+.App {
+  text-align: left;
+  color: aliceblue;
+  padding: 1px;
+  font-size: 2rem;
+  background: lightblue;
+  width: 500px ;
+  height:auto;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+button,input{
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+th,td{
+  border:1px solid black;
+ color:black;
+}
+th{
+ 
+  background: lightskyblue;
+}
+

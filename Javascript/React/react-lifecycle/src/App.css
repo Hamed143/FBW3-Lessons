@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  border: 1px solid limegreen;
+  border-radius: 15px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3px;
+  background: lightpink;
+
+}
+.App span{
+  color: green;
+  font-weight: bold;
+
 }
 .wrapper{
   width: 60%;
